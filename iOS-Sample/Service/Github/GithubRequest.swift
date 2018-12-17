@@ -11,11 +11,15 @@ import Alamofire
 import RxSwift
 import RxAlamofire
 
-struct GithubCall: AlamofireCall {
-    let method: HTTPMethod
-    let path: String
-    let headers: HTTPHeaders?
+protocol GithubResponse {
+    func response<T: Codable>() -> Observable<T>
+}
+
+struct GithubCall: AlamofireRequest {
+    let endpoint: AlamofireEndpoint
+    let extraHeaders: HTTPHeaders?
     let params: Parameters?
+    let sessionManager: SessionManager
     
     var baseURL: String {
         return "https://api.github.com"
@@ -27,15 +31,22 @@ struct GithubCall: AlamofireCall {
         return decoder
     }
     
-    init (method: HTTPMethod, path: String, headers: HTTPHeaders? = nil, params: Parameters? = nil) {
-        self.method = method
-        self.path = path
-        self.headers = headers
+    init (endpoint: AlamofireEndpoint,
+          extraHeaders: HTTPHeaders? = nil,
+          params: Parameters? = nil,
+          sessionManager: SessionManager = .default) {
+        
+        self.endpoint = endpoint
+        self.extraHeaders = extraHeaders
         self.params = params
+        self.sessionManager = sessionManager
     }
-    
+}
+
+extension GithubCall: GithubResponse {
     func response<T: Codable>() -> Observable<T> {
-        return RxAlamofire.requestData(self)
+        return sessionManager.rx.request(urlRequest: self)
+            .responseData()
             .map { (response, data) -> T in
                 switch response.statusCode {
                 case 200..<300:
