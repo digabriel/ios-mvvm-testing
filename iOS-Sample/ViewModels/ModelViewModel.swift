@@ -14,7 +14,7 @@ protocol ViewModelServices {
 }
 
 class ModelViewModel<T> {
-    var model: T
+    let model: T
     
     init(model: T) {
         self.model = model

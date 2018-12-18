@@ -12,4 +12,8 @@ class RepositoryViewModel: ModelViewModel<Repository> {
     var url: URL? {
         return URL(string: model.url)
     }
+    
+    var name: String {
+        return model.name
+    }
 }

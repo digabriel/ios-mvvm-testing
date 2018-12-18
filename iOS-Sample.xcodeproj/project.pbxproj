@@ -16,6 +16,9 @@
 		1310C12E21C9335A00F3E3C0 /* repository.json in Resources */ = {isa = PBXBuildFile; fileRef = 1310C12D21C9335A00F3E3C0 /* repository.json */; };
 		1310C13021C9336E00F3E3C0 /* repository_invalid.json in Resources */ = {isa = PBXBuildFile; fileRef = 1310C12F21C9336E00F3E3C0 /* repository_invalid.json */; };
 		1310C13321C938BB00F3E3C0 /* Models+Fakes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1310C13221C938BB00F3E3C0 /* Models+Fakes.swift */; };
+		1310C13521C93ADF00F3E3C0 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1310C13421C93ADF00F3E3C0 /* BaseViewController.swift */; };
+		1310C13721C94FD600F3E3C0 /* Reactive+UISearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1310C13621C94FD600F3E3C0 /* Reactive+UISearchBar.swift */; };
+		1310C13921C94FF700F3E3C0 /* Reactive+UIResponser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1310C13821C94FF700F3E3C0 /* Reactive+UIResponser.swift */; };
 		1365F7F121C7D03700055756 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1365F7F021C7D03700055756 /* SearchViewController.swift */; };
 		1365F7F321C7D05400055756 /* ModelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1365F7F221C7D05400055756 /* ModelViewModel.swift */; };
 		1365F7F721C7D60700055756 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1365F7F621C7D60700055756 /* Repository.swift */; };
@@ -71,6 +74,9 @@
 		1310C12D21C9335A00F3E3C0 /* repository.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = repository.json; sourceTree = "<group>"; };
 		1310C12F21C9336E00F3E3C0 /* repository_invalid.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = repository_invalid.json; sourceTree = "<group>"; };
 		1310C13221C938BB00F3E3C0 /* Models+Fakes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Models+Fakes.swift"; sourceTree = "<group>"; };
+		1310C13421C93ADF00F3E3C0 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		1310C13621C94FD600F3E3C0 /* Reactive+UISearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reactive+UISearchBar.swift"; sourceTree = "<group>"; };
+		1310C13821C94FF700F3E3C0 /* Reactive+UIResponser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reactive+UIResponser.swift"; sourceTree = "<group>"; };
 		1365F7F021C7D03700055756 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		1365F7F221C7D05400055756 /* ModelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelViewModel.swift; sourceTree = "<group>"; };
 		1365F7F621C7D60700055756 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
@@ -189,6 +195,7 @@
 		1310C12A21C9324500F3E3C0 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				1310C13A21C9511900F3E3C0 /* Reactive */,
 				1310C12B21C9325800F3E3C0 /* JSONDecoder.swift */,
 			);
 			path = Extensions;
@@ -202,10 +209,20 @@
 			path = Fakes;
 			sourceTree = "<group>";
 		};
+		1310C13A21C9511900F3E3C0 /* Reactive */ = {
+			isa = PBXGroup;
+			children = (
+				1310C13621C94FD600F3E3C0 /* Reactive+UISearchBar.swift */,
+				1310C13821C94FF700F3E3C0 /* Reactive+UIResponser.swift */,
+			);
+			path = Reactive;
+			sourceTree = "<group>";
+		};
 		1365F7EA21C7CFE100055756 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				1365F7F021C7D03700055756 /* SearchViewController.swift */,
+				1310C13421C93ADF00F3E3C0 /* BaseViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -620,11 +637,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1310C13521C93ADF00F3E3C0 /* BaseViewController.swift in Sources */,
 				1310C12C21C9325800F3E3C0 /* JSONDecoder.swift in Sources */,
 				1365F80421C80C3C00055756 /* ServiceError.swift in Sources */,
 				1365F80F21C8100100055756 /* GithubSearch.swift in Sources */,
 				1365F7F921C7DA2400055756 /* RepositoryViewModel.swift in Sources */,
+				1310C13721C94FD600F3E3C0 /* Reactive+UISearchBar.swift in Sources */,
 				1365F7F121C7D03700055756 /* SearchViewController.swift in Sources */,
+				1310C13921C94FF700F3E3C0 /* Reactive+UIResponser.swift in Sources */,
 				1365F80621C80C7200055756 /* GithubRequest.swift in Sources */,
 				1365F80B21C80F7500055756 /* AlamofireCall.swift in Sources */,
 				1365F7FB21C7DF1D00055756 /* SearchViewModel.swift in Sources */,
