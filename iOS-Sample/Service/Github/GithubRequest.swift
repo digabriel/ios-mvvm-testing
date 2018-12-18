@@ -25,11 +25,7 @@ struct GithubCall: AlamofireRequest {
         return "https://api.github.com"
     }
     
-    var jsonDecoder: JSONDecoder {
-        let decoder = JSONDecoder()
-        decoder.dateDecodingStrategy = .iso8601
-        return decoder
-    }
+    var jsonDecoder = JSONDecoder.iso8601Decoder
     
     init (endpoint: AlamofireEndpoint,
           extraHeaders: HTTPHeaders? = nil,

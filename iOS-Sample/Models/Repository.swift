@@ -23,3 +23,9 @@ extension Repository: Codable {
         case url
     }
 }
+
+extension Repository: Equatable {
+    static func == (lhs: Repository, rhs: Repository) -> Bool {
+        return lhs.id == rhs.id
+    }
+}
