@@ -2,8 +2,8 @@
 platform :ios, '10.0'
 
 def testing_pods
-  pod 'Quick',     '~> 1.3'
-  pod 'Nimble',    '~> 7.3'
+  pod 'Quick',     '2.1.0'
+  pod 'Nimble',    '8.0.2'
 end
 
 target 'iOS-Sample' do
@@ -12,9 +12,9 @@ target 'iOS-Sample' do
 
   # Pods for iOS-Sample
 
-  pod 'RxSwift',     '~> 4.0'
-  pod 'RxCocoa',     '~> 4.0'
-  pod 'RxAlamofire', '~> 4.3'
+  pod 'RxSwift',     '5.0.0'
+  pod 'RxCocoa',     '5.0.0'
+  pod 'RxAlamofire', '5.0.0'
 
   target 'iOS-SampleTests' do
     inherit! :search_paths

@@ -29,7 +29,7 @@ class SearchViewController: BaseViewController {
     override func setupBindings() {
         // Search text changed
         searchBar.rx.text.orEmpty
-            .debounce(0.5, scheduler: MainScheduler.instance)
+            .debounce(.milliseconds(500), scheduler: MainScheduler.instance)
             .distinctUntilChanged()
             .skip(1) // Initial value
             .bind(to: viewModel.search)
