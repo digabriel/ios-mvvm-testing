@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -448,13 +448,16 @@
 				TargetAttributes = {
 					1306E60521C7CE20001A4EF0 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 					1306E61921C7CE21001A4EF0 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 1306E60521C7CE20001A4EF0;
 					};
 					1306E62421C7CE21001A4EF0 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 1306E60521C7CE20001A4EF0;
 					};
 				};
@@ -822,7 +825,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "net.dimasgabriel.iOS-Sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -841,7 +844,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "net.dimasgabriel.iOS-Sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -862,7 +865,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "net.dimasgabriel.iOS-SampleTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-Sample.app/iOS-Sample";
 			};
@@ -884,7 +887,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "net.dimasgabriel.iOS-SampleTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-Sample.app/iOS-Sample";
 			};
@@ -905,7 +908,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "net.dimasgabriel.iOS-SampleUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "iOS-Sample";
 			};
@@ -926,7 +929,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "net.dimasgabriel.iOS-SampleUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "iOS-Sample";
 			};
